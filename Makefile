@@ -1,5 +1,5 @@
 CC=gcc
 CFLAGS=-Wall -Wextra -std=c11 -pedantic -ggdb
-
-png: main.c
-	$(CC) -o png main.c $(CFLAGS)
+SRC=main.c rw.c
+png: $(SRC)
+	$(CC) -o png $(SRC) $(CFLAGS)
